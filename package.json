@@ -1,0 +1,20 @@
+{
+  "name": "vk-easy",
+  "version": "0.0.1",
+  "description": "Promise Based wrapper for methods VK API 🍀",
+  "main": "index.js",
+  "repository": "https://github.com/vladzadvorny/vk-easy.git",
+  "author": "Vlad Zadvorny <vladzadvorny@icloud.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "http-build-query": "^0.0.3"
+  },
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.5.0"
+  }
+}

@@ -9,9 +9,9 @@
 npm install vk-easy
 ```
 ```javascript
-const vkEasy = require('vk-easy');
+const api = require('vk-easy');
 
-vkEasy('users.get', {
+api('users.get', {
   user_ids: 1
 })
   .then(data => data.data)
@@ -21,7 +21,7 @@ vkEasy('users.get', {
 По умолчанию используется метод "POST". Для взаимодействие посредством метода "GET" указывается третий необязательный параметр:
 
 ```javascript
-vkEasy('users.get', {
+api('users.get', {
   user_ids: 1,
   v: '5.62'
 }, true)

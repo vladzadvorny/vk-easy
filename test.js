@@ -1,10 +1,10 @@
-var vkEasy = require('./index');
+var api = require('./index');
 var expect = require('chai').expect;
 
 it('post', () => {
   var response = [{ id: 1, first_name: 'Павел', last_name: 'Дуров' }];
 
-  return vkEasy('users.get', {
+  return api('users.get', {
     user_ids: 1
   })
     .then(data => data.data)
@@ -16,7 +16,7 @@ it('post', () => {
 it('get', () => {
   var response = [{ id: 1, first_name: 'Павел', last_name: 'Дуров' }];
 
-  return vkEasy(
+  return api(
     'users.get',
     {
       user_ids: 1,

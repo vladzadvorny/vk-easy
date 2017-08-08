@@ -1,9 +1,8 @@
-var api = require('./index');
-var expect = require('chai').expect;
+const api = require('./index');
+const expect = require('chai').expect;
+const response = [{ id: 1, first_name: 'Павел', last_name: 'Дуров' }];
 
 it('post', () => {
-  var response = [{ id: 1, first_name: 'Павел', last_name: 'Дуров' }];
-
   return api('users.get', {
     user_ids: 1
   }).then(data => {
@@ -12,8 +11,6 @@ it('post', () => {
 });
 
 it('get', () => {
-  var response = [{ id: 1, first_name: 'Павел', last_name: 'Дуров' }];
-
   return api(
     'users.get',
     {

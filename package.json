@@ -1,6 +1,6 @@
 {
   "name": "vk-easy",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Promise Based wrapper for methods VK API 🍀",
   "main": "index.js",
   "repository": "https://github.com/vladzadvorny/vk-easy.git",

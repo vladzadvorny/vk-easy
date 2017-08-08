@@ -6,11 +6,9 @@ it('post', () => {
 
   return api('users.get', {
     user_ids: 1
-  })
-    .then(data => data.data)
-    .then(data => {
-      expect(data.response).to.deep.equal(response);
-    });
+  }).then(data => {
+    expect(data.response).to.deep.equal(response);
+  });
 });
 
 it('get', () => {
@@ -23,9 +21,7 @@ it('get', () => {
       v: '5.62'
     },
     true
-  )
-    .then(data => data.data)
-    .then(data => {
-      expect(data.response).to.deep.equal(response);
-    });
+  ).then(data => {
+    expect(data.response).to.deep.equal(response);
+  });
 });

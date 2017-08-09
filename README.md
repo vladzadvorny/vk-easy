@@ -19,12 +19,9 @@ api('users.get', {
 По умолчанию используется "POST". Для взаимодействия посредством метода "GET", укажите третий параметр:
 
 ```javascript
-api(
-  'users.get',
-  {
+api('users.get', {
     user_ids: 1,
     v: '5.62'
-  },
-  true
+  }, true
 ).then(console.log);
 ```

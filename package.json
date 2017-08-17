@@ -1,6 +1,6 @@
 {
   "name": "vk-easy",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "Promise Based wrapper for methods VK API 🍀",
   "main": "index.js",
   "repository": "https://github.com/vladzadvorny/vk-easy.git",
@@ -9,6 +9,7 @@
   "scripts": {
     "test": "mocha test.js"
   },
+  "keywords": ["vk", "vkontakte", "api"],
   "dependencies": {
     "request": "^2.81.0",
     "request-promise": "^4.2.1"

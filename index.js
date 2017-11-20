@@ -7,9 +7,13 @@ module.exports = (method, params, get) => {
   params.v = params.v || '5.67';
 
   return get
-    ? axios.get(`https://api.vk.com/method/${method}?${httpBuildQuery(params)}`)
-    : axios.post(
-        `https://api.vk.com/method/${method}`,
-        querystring.stringify(params)
-      );
+    ? axios
+        .get(`https://api.vk.com/method/${method}?${httpBuildQuery(params)}`)
+        .then(data => data.data)
+    : axios
+        .post(
+          `https://api.vk.com/method/${method}`,
+          querystring.stringify(params)
+        )
+        .then(data => data.data);
 };
